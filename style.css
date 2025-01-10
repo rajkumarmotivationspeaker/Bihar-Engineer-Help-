@@ -1,0 +1,262 @@
+@*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #468B ;
+	
+}
+
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #008EFE;
+	position: fixed;
+	
+	
+}
+h1{
+	margin: 20px;
+	margin-left: 65px;
+	font-size: 25px;
+	color: white;
+}
+
+
+	section {
+	width: 98%;
+	height:1250px;
+	margin-left: 1%;
+	position: static;
+}
+	
+	
+
+#first{
+	width: 100%;
+	height: 60px;
+	
+	
+	
+
+}
+#second , #third, #fourth,#fiveth{
+	width: 94%;
+	height: 450px;
+	margin-top: 50px;
+	margin-left: 3%;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 1px  1px 10px   0px black;
+	
+}
+#fourth{
+	height: 250px;
+}
+#second{
+	height: 230px;
+}
+
+#ns{
+	margin: 15px ;
+	margin-left: 105px;
+	background-color: red;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 0 3px 3px ;
+	color: white;
+	
+	
+
+}
+
+#pq{
+	margin: 15px ;
+	margin-left: 105px;
+	background-color: blue;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 0 3px 3px ;
+	color: white;
+	
+	
+
+}
+#ln{
+	margin: 15px ;
+	margin-left: 95px;
+	background-color: green;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 0 3px 3px ;
+	color: white;
+	
+	
+
+}
+
+#pcenotes{
+  
+	background-color: red;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 0 3px 3px ;
+	color: white;
+    
+}
+
+#box1, #box2 , #box3, #box4, #box5, #box6, #box7, #box8, #box9 , #boxa , #boxb,
+  #boxc ,#boxd ,#boxe ,#boxf,#pceboxe{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 30px;
+	margin-left: 7px;
+	border-radius:100px ;
+}
+#box1{
+	background-image: url('gate.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box2{
+	background-image: url('bteach.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box3{
+	background-image: url('ies.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box4{
+	background-image: url('cs.png');
+	background-position: center;
+	background-size: 100% 100%;
+}
+#box5{
+	background-image: url('ece.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box6{
+	background-image: url('eee.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box7{
+	background-image: url('mechanical.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box8{
+	background-image: url('electrical.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#box9{
+	background-image: url('cvil.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#boxa{
+	background-image: url('it.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#boxb{
+	background-image: url('le.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#boxc{
+	background-image: url('int.png');
+	background-position: center;
+	background-size: 100px 100px  ;
+
+}
+#boxd{
+	background-image: url('clang.png');
+	background-position: center;
+	background-size: 100px 80px  ;
+	background-repeat: no-repeat;
+
+}
+#boxe{
+	background-image: url('jslang.png');
+	background-position: center;
+	background-size: 100px 70px ;
+	background-repeat: no-repeat;
+
+}
+#boxf{
+	background-image: url('pyt.png');
+	background-position: center;
+	background-size: 100px 80px  ;
+	background-repeat: no-repeat;
+
+}
+
+#boxname1{
+	float: left;
+	margin-top: 133px;
+	margin-left: -78px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+#boxname2{
+	float: left;
+	margin-top: 133px;
+	margin-left: -84px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+#boxname3{
+	float: right;
+	margin-top: 1px;
+	margin-right: 16px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.pps{
+    background-image: url('pps.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
+}
+.phy{
+    background-image: url('phy.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
+}
+.math{
+    background-image: url('math.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
+}
+
+#fiveth{
+    height:200px;
+    background-color:#fffc95 ;
+}
+
+
