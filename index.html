@@ -12,7 +12,10 @@
 	</head>
 	<body>
 		<header>
-			<h1>Bihar Engineers Help</h1>
+			<center>
+				<h1>Bihar Engineers Help</h1>
+			</center>
+			<button id="shareBtn"> </button>
 		</header>
 		<section>
 			<div id="first"></div>
@@ -75,8 +78,30 @@
 		  </div>
 		  
 		</section>
+
+
+
 		
+		<script>
 			
+			document.getElementById("shareBtn").addEventListener("click", async () => {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: "My Website",
+                text: "Check out this amazing website!",
+                url: window.location.href, // Dynamically uses the current page URL
+            });
+            console.log("Page shared successfully!");
+        } catch (error) {
+            console.error("Error sharing page:", error);
+        }
+    } else {
+        alert("Your browser doesn't support the share feature.");
+    }
+});
+
+		</script>				
 		
 	</body>
 </html>
