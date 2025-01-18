@@ -255,22 +255,25 @@ h1{
 }
 
 #fiveth{
-    height:200px;
+    height:400px;
     background-color:#fffc95 ;
 }
 
-#shareBtn{
-	width: 30px;
-	height: 30px;
-	background-color: white;
-	border-radius: 20px;
-	float: right;
-	box-sizing: border-box;
-	padding: 0%;
-	margin: 0px;
-	margin-top: -50px;
-	margin-right: 10px;
-	position: relative;
+.chem{
+    background-image: url('chem.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
 }
-
-
+.mec{
+    background-image: url('mec.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
+}
+.it{
+    background-image: url('it.png');
+    background-position: center;
+	   background-size: 100% 100% ;
+	   background-repeat: no-repeat;
+}
