@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  padding: 1rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#hero {
+  text-align: center;
+  background: linear-gradient(to bottom right, #007bff, #0062cc);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+#hero button {
+  background-color: white;
+  color: #007bff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  margin: 1rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.sy1{
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bolder;
+  font-size: larger;
+}
+#box1{
+  background-color: rgb(61, 204, 0);
+  color: #ffffff;
+}
+#box2{
+  background-color: rgb(163, 0, 204);
+  color: #ffffff;
+}

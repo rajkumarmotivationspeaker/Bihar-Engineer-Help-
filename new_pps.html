@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Engineers Helps</title>
+  <link rel="stylesheet" href="styless.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .content-section {
+      padding: 20px;
+    }
+    .notes-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .notes-buttons button {
+      flex: 1 1 calc(50% - 10px);
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .notes-buttons button:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .content-section {
+        padding: 10px;
+      }
+      .notes-buttons button {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  <header>
+    <nav>
+      <h1>Bihar Engineers Helps</h1>
+      <ul class="nav-links">
+        <li><a href="#gate-materials">GATE Materials</a></li>
+        <li><a href="#ese-notes">ESE Notes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+-->
+  <main>
+    <section id="hero">
+      <h2>Empowering Engineers for a Brighter Future</h2>
+      <p>Explore resources, notes, and materials to excel in engineering exams.</p>
+      <button>Get Started</button>
+    </section>
+
+    <!--
+    <section id="pce-materials" class="content-section">
+      <h2>PCE Study Materials</h2>
+      <p>Download comprehensive previous year questions and solutions.</p>
+      <button onclick="window.open('pce_notes.html')">View Resources</button>
+    </section>
+  -->
+    <section id="notes" class="content-section">
+      <h2>PPS Notes</h2>
+      <p>Access All Handwritten Notes Free of Cost.</p>
+      <div class="notes-buttons">
+
+        <button onclick="window.open('https://drive.google.com/file/d/1jKVzRKcMtr_AlWv5ZputUkBI_cMRf36O/preview')">Lecture 1</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1jYcR4xUVvJh64qXblCNFLonTX96yf3lc/preview')">Lecture 2</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1jvDO-8el5VMmSJCxev5etD-FKSqfXOBb/preview')">Lecture 3</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1k4rpggRwtoI-1yaJLT65__GqJNY45Pso/preview')">Lecture 4</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1kPMuRqzSQ-0f5o6ZT1WmZIRyzlinJ6cG/preview')">Lecture 5</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1kSXj2LwQVZQDmTdagKRjEXHcWdpMIM4x/preview')">Lecture 6</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1l0ooZfnT1qvJlxmgfiT2w8Bz9GlrZ-ax/preview')">Lecture 7</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1lBsPOgJ4vwUMpV71N9s9IWoQLiq37ntv/preview')">Lecture 8</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1lLaIzdHN0_pwbp-kvbsnJFsSUdTPDmdi/preview')">Lecture 9</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1r640bk8aHVbSeGrc7T8EsUci5wwWmM1A/preview')">Lecture 10</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rEBkkdx_V-dWL1lNXLcupojTu8hcbwBw/preview')">Lecture 11</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rHu4cpZ6KhG71cNnG7fLJCf6cfle25LL/preview')">Lecture 12</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rJUp7mOHlhg9kgNCpIxkUGc-w5gS1OEQ/preview')">Lecture 13</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rOmtBGcSsSjJbbcbGAZAgR6CHTFWhHTH/preview')">Lecture 14</button>
+        <button onclick="window.open('https://drive.google.com/file/d/1rQBumNqk7zrae0wUG3XCRltlk5AEna-D/preview')">Lecture 15</button>
+        <button onclick="window.open('#')">Lecture 16</button>
+        <button onclick="window.open('#')">Lecture 17</button>
+        <button onclick="window.open('#')">Lecture 18</button>
+        <button onclick="window.open('#')">Lecture 19</button>
+        <button onclick="window.open('#')">Lecture 20</button>
+        <button onclick="window.open('#')">Lecture 21</button>
+        <button onclick="window.open('#')">Lecture 22</button>
+        <button onclick="window.open('#')">Lecture 23</button>
+        <button onclick="window.open('#')">Lecture 24</button>
+        <button onclick="window.open('#')">Lecture 25</button>
+        <button onclick="window.open('#')">Lecture 26</button>
+        <button onclick="window.open('#')">Lecture 27</button>
+        <button onclick="window.open('#')">Lecture 28</button>
+        <button onclick="window.open('#')">Lecture 29</button>
+        <button onclick="window.open('#')">Lecture 30</button>
+        <button onclick="window.open('#')">Lecture 31</button>
+        <button onclick="window.open('#')">Lecture 32</button>
+        <button onclick="window.open('#')">Lecture 33</button>
+        <button onclick="window.open('#')">Lecture 34</button>
+        <button onclick="window.open('#')">Lecture 35</button>
+        <button onclick="window.open('#')">Lecture 36</button>
+        <button onclick="window.open('#')">Lecture 37</button>
+        <button onclick="window.open('#')">Lecture 38</button>
+        <button onclick="window.open('#')">Lecture 39</button>
+        <button onclick="window.open('#')">Lecture 40</button>
+        <button onclick="window.open('#')">Lecture 41</button>
+        <button onclick="window.open('#')">Lecture 42</button>
+        <button onclick="window.open('#')">Lecture 43</button>
+        <button onclick="window.open('#')">Lecture 44</button>
+        <button onclick="window.open('#')">Lecture 45</button>
+        <button onclick="window.open('#')">Lecture 46</button>
+        <button onclick="window.open('#')">Lecture 47</button>
+        <button onclick="window.open('#')">Lecture 48</button>
+        <button onclick="window.open('#')">Lecture 49</button>
+        <button onclick="window.open('#')">Lecture 50</button>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
