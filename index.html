@@ -1,116 +1,64 @@
 <!DOCTYPE html>
-<html lang="eng">
-	<head>
-		<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-     <link rel="stylesheet" href="style.css" >
-	
-		<title>
-		Bihar Engineers Helps	
-		</title>
-	</head>
-	<body>
-		<header>
-			
-			<h1>Bihar Engineers Help</h1>
-			<!--button id="shareBtn"> </button-->
-		</header>
-		<section>
-			<div id="first"></div>
-			
-		  <div id="second">
-
-		 	<p1 id="ns">New Syllabus</p1>
-		 	<a href="https://gate2024.iisc.ac.in/papers-and-syllabus/"><nav
-		 	id="box1"></nav></a>
-                        <p1 id="boxname1">GATE</p1>
-			  
-		 	<a href="https://drive.google.com/file/d/17A6MvNr61ZZXlar446vUgHBxDFUop_F_/view?usp=sharing"> <nav id="box2"> </nav> </a>
-		        <p1 id="boxname2"> B.Tech</p1>
-
-			<a href="https://drive.google.com/file/d/15Yco5IOEeq6cp-IDgxREAyOx0zK10sZ1/view?usp=drivesdk"> <nav id="box3"></nav> </a>
-		  <p1 id="boxname3">IES/ESE</p1>
-
-		  </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Engineers Help</title>
+  <link rel="stylesheet" href="styless.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 
-<div id="fiveth">
-		  <center><p1 id="pcenotes">PCE Notes </p1>	</center>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Bihar Engineers Helps</h1>
+      <ul class="nav-links">
+        <li><a href="#gate-materials">GATE Materials</a></li>
+        <li><a href="#ese-notes">ESE Notes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		  <a href="ppsnotes.html"><nav id="pceboxe" class="pps"></nav></a>
+  <main>
+    <section id="hero">
+      <h2>Empowering Engineers for a Brighter Future</h2>
+      <p>Explore resources, notes, and materials to excel in engineering exams.</p>
+      <button>Get Started</button>
+    </section>
 
-		  <a href="physicsnotes.html"><nav id="pceboxe" class="phy"></nav></a>
-
-		  <a href="mathnotes.html"><nav id="pceboxe" class="math"></nav></a>
-
-
-    <a href="#"><nav id="pceboxe" class="mec"></nav></a>
-
-		  <a href="#"><nav id="pceboxe" class="chem"></nav></a>
-
-		  <a href="#"><nav id="pceboxe" class="it"></nav></a>
+    <section id="gate-materials" class="content-section">
+     <center>
+      <button class="sy1" id="box1" onclick="window.open('https://gate2025.iitr.ac.in/exam-papers-and-syllabus.html')"> Gate Syllabus</button> <br>
+      <button class="sy1" onclick="window.open('https://drive.google.com/file/d/17A6MvNr61ZZXlar446vUgHBxDFUop_F_/preview')"> B.Tech Syllabus</button><br>
+       <button class="sy1" id="box2" onclick="window.open('https://drive.google.com/file/d/15Yco5IOEeq6cp-IDgxREAyOx0zK10sZ1/preview')">ESE Syllabus</button>
+     </center>
+    </section>
 
 
 
-		  </div>
+    <section id="gate-materials" class="content-section">
+      <h2> PCE Study Materials</h2>
+      <p>Download comprehensive previous year questions and solutions.</p>
+      <button onclick="window.open('pce_notes.html')">View Resources</button>
+    </section>
 
+    <section id="gate-materials" class="content-section">
+      <h2>GATE Study Materials</h2>
+      <p>Download comprehensive previous year questions and solutions.</p>
+      <button onclick="window.open('#')">View Resources</button>
+    </section>
 
-		  
-		  <div id="third">
-		  <p1 id="pq"> PYQ Question</p1>	
-		  	
-		  	<a href="csepyq.html"><nav id="box4"></nav></a>
+    <section id="ese-notes" class="content-section">
+      <h2>ESE Notes</h2>
+      <p>Get detailed and exam-focused notes for engineering exams.</p>
+      <button onclick="window.open('#')">View Notes</button>
+    </section>
+  </main>
 
-		  	<a href="ecepyq.html"><nav id="box5"></nav></a>
-
-		  	<a href="eeepyq.html"><nav id="box6"></nav></a>
-
-		  	<a href="mechanicalpyq.html"><nav id="box7"></nav></a>
-
-		  	<a href="electricalpyq.html"><nav id="box8"></nav></a>
-
-		  	<a href="cvilpyq.html"><nav id="box9"></nav></a>
-
-		  	<a href="#"><nav id="boxa"></nav></a>
-
-		  	<a href="#"><nav id="boxb"></nav></a>
-
-		  	<a href="#"><nav id="boxc"></nav></a>
-		  </div>
-		  
-		  <div id="fourth">
-		  <p1 id="ln">Language Notes </p1>	
-		  <a href="https://drive.google.com/file/d/1BcaoEQP9Na_WbOtwFDEH5iGzJVY7TsVt/view?usp=drivesdk"><nav id="boxd"></nav></a>
-		  <a href="https://drive.google.com/file/d/1BfchmVBByEVckxrv-i1ExlBuLuFjr5Km/view?usp=drivesdk"><nav id="boxe"></nav></a>
-		  <a href="#"><nav id="boxf"></nav></a>
-		  </div>
-		  
-		</section>
-
-
-
-		
-		<script>
-			
-			document.getElementById("shareBtn").addEventListener("click", async () => {
-    if (navigator.share) {
-        try {
-            await navigator.share({
-                title: "My Website",
-                text: "Check out this amazing website!",
-                url: window.location.href, // Dynamically uses the current page URL
-            });
-            console.log("Page shared successfully!");
-        } catch (error) {
-            console.error("Error sharing page:", error);
-        }
-    } else {
-        alert("Your browser doesn't support the share feature.");
-    }
-});
-
-		</script>				
-		
-	</body>
+  <footer>
+    <p>© 2025 Bihar Engineers Help | Designed By: Motivationzilla.com</p>
+  </footer>
+</body>
 </html>
