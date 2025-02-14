@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bihar Engineers Help</title>
-  <link rel="stylesheet" href="styless.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BEH</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1 id="beh">Bihar Engineers Helps</h1>
-      <ul class="nav-links">
-        <li><a href="#gate-materials">GATE Materials</a></li>
-        <li><a href="#ese-notes">ESE Notes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="hero">
-      <h2>Empowering Engineers for a Brighter Future</h2>
-      <p>Explore resources, notes, and materials to excel in engineering exams.</p>
-      <button>Get Started</button>
-    </section>
+	<div class="topbar">
+		<h2>Bihar Engineers Help</h2>
+		<!--Here submenu tag start-->
+		<a href="#gate_notes"><span class="submenu"> GATE Materials </span></a>
+		<a href="#pce_notes"><span class="submenu"> PCE Notes </span></a>
+		<a href="#contact"><span class="submenu"> Contact </span></a>
+		<!--Here submenu tag end-->
+	</div>
 
-    <section id="gate-materials" class="content-section">
-     <center>
-      <button class="sy1" id="box1" onclick="window.open('https://gate2025.iitr.ac.in/exam-papers-and-syllabus.html')"> Gate Syllabus</button> <br>
-      <button class="sy1" onclick="window.open('https://drive.google.com/file/d/17A6MvNr61ZZXlar446vUgHBxDFUop_F_/preview')"> B.Tech Syllabus</button><br>
-       <button class="sy1" id="box2" onclick="window.open('https://drive.google.com/file/d/15Yco5IOEeq6cp-IDgxREAyOx0zK10sZ1/preview')">ESE Syllabus</button>
-     </center>
-    </section>
+	<div class="titlebar">
+		<h3>Empowering Engineers for a Bright Future</h3>
+		<p class="titlebar_p">Explore resources, notes, and materials to <br>excel in enginnering exams.</p>
+		<button class="titlebar_get_started">Get Started</button>
+	</div>
 
+	<div class="symb">
+		<!--Here syllubus tag start-->
+		<center>
+			<button class="sylbus" id="btn1"> Gate Syllabus </button> <br>
+			<button class="sylbus" id="btn2"> B.Tech Syllabus </button><br>
+			<button class="sylbus" id="btn3"> ESE Syllabus </button>
+		</center>
+		<!--Here syllubus tag end-->
+	</div>
 
+	<!--Here materals  tag start-->
+	<div class="study" id="pce_notes">
+		<h1 class="study_notes"> PCE Study Materials </h1>
+		<p class="study_subtitle">Get detailed and exam-focused notes for enginnering exams.</p>
+		<a href="#"></a><button class="view_resource"> View Resources</button></a>
+	</div>
 
-    <section id="gate-materials" class="content-section">
-      <h2> PCE Study Materials</h2>
-      <p>Get detailed and exam-focused notes for engineering exams.</p>
-      <button onclick="window.open('pce_notes.html')">View Resources</button>
-    </section>
-    
-        <section id="gate-materials" class="content-section">
-      <h2> Our Books </h2>
-      <p>Get detailed and exam-focused notes for engineering exams.</p>
-      <button onclick="window.open('my_books.html')">View Resources</button>
-        </section>
+	<div class="study" id="gate_notes">
+		<h1 class="study_notes"> Our Books </h1>
+		<p class="study_subtitle">Get detailed and exam-focused notes for enginnering exams.</p>
+		<a href="#"></a><button class="view_resource"> View Resources</button></a>
+	</div>
 
-    <section id="gate-materials" class="content-section">
-      <h2>GATE Study Materials</h2>
-      <p>Get detailed and exam-focused notes for engineering exams..</p>
-      <button onclick="window.open('#')">View Resources</button>
-    </section>
+	<div class="study" id="book">
+		<h1 class="study_notes"> GATE Study Materials </h1>
+		<p class="study_subtitle">Get detailed and exam-focused notes for enginnering exams.</p>
+		<a href="#"></a><button class="view_resource"> View Resources</button></a>
+	</div>
+	<!--Here materials tag end-->
 
-    <section id="ese-notes" class="content-section">
-      <h2>ESE Notes</h2>
-      <p>Get detailed and exam-focused notes for engineering exams.</p>
-      <button onclick="window.open('#')">View Notes</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Bihar Engineers Help | Designed By: Motivationzilla.com</p>
-    <a href="privacy-policy.html"><p id="privacy">privacy-policy</p></a>
-    <a href="disclaimer.html"><p  id="privacy">Disclaimer</p></a>
-  </footer>
+	<!--Here footer tag start-->
+	<footer>
+		<p class="footer_text"> © 2025 Bihar Engineers Help | Designed By: Motivationzilla.com </p>
+		<a href="#">
+			<p class="footer_text" id="privacy-policy"> privacy-policy </p>
+		</a>
+		<a href="#">
+			<p class="footer_text" id="privacy-policy"> Disclaimer </p>
+		</a>
+	</footer>
+	<!--Here footer tag end-->
 </body>
 </html>
