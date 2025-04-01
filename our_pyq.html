@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Engineers Helps</title>
+  <link rel="stylesheet" href="styless.css">
+    <link rel="icon" href="logo.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .content-section {
+      padding: 20px;
+    }
+    .notes-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .notes-buttons button {
+      flex: 1 1 calc(50% - 10px);
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .notes-buttons button:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .content-section {
+        padding: 10px;
+      }
+      .notes-buttons button {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  <header>
+    <nav>
+      <h1>Bihar Engineers Helps</h1>
+      <ul class="nav-links">
+        <li><a href="#gate-materials">GATE Materials</a></li>
+        <li><a href="#ese-notes">ESE Notes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+-->
+  <main>
+    <section id="hero">
+      <h2>Empowering Engineers for a Brighter Future</h2>
+      <p>Explore resources, notes, and materials to excel in engineering exams.</p>
+      <button>Get Started</button>
+    </section>
+
+    <!--
+    <section id="pce-materials" class="content-section">
+      <h2>PCE Study Materials</h2>
+      <p>Download comprehensive previous year questions and solutions.</p>
+      <button onclick="window.open('pce_notes.html')">View Resources</button>
+    </section>
+  -->
+    <section id="notes" class="content-section">
+      <h2> OUR PYQ </h2>
+      <p>Access All Handwritten Notes Free of Cost.</p>
+      <div class="notes-buttons">
+ 
+            <button id="btn_pyq" onclick="window.open('phy_pyq.html')"> Physics  </button>
+            <button id="btn_pyq" id="btn_pyq" onclick="window.open('#')">Math</button>
+            <button id="btn_pyq" onclick="window.open('#')">PPS</button>
+            <button  id="btn_pyq" onclick="window.open('#')">Chemistry</button>
+            
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let btns = document.querySelectorAll('.notes-buttons button'); // Select all buttons
+  
+    btns.forEach(btn => {
+      if (btn.getAttribute('onclick').includes('#')) { // Check if onclick opens '#'
+        btn.style.backgroundColor = 'gray';
+      } else {
+        btn.style.backgroundColor = 'blue';
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
