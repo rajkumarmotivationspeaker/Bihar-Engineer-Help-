@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bihar Engineers Help </title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-     <link rel="icon" href="logo.jpg">
+    <link rel="icon" href="logo.jpg">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+
     <style>
         * {
             margin: 0;
@@ -15,7 +23,7 @@
         }
 
         html {
-              scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
 
         .topbar {
@@ -25,6 +33,11 @@
             padding-bottom: 15px;
             text-align: center;
             aspect-ratio: 20/1;
+
+        }
+
+        section {
+            position: relative;
         }
 
         .titlebar {
@@ -102,7 +115,7 @@
         }
 
         .submenu {
-           color: aliceblue;
+            color: aliceblue;
             margin: 10px 10px 0 0;
             font-weight: bold;
             font-size: 15px;
@@ -177,11 +190,12 @@
             text-decoration: none;
         }
 
-        
-         /* change 13/07/2025 for heading and subtitle for good view in mobile  */
+        /* change 13/07/2025 for heading and subtitle for good view in mobile  */
         @media screen and (max-width: 1110px) {
 
-           
+            body {
+                background-color: red;
+            }
 
             h3 {
                 color: yellow;
@@ -213,8 +227,29 @@
             }
         }
 
+        /* send message form styling start */
 
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form_name {
+
+            float: left;
+            font-weight: bold;
+        }
         
+        .btn-primary{
+            background-color: greenyellow;
+        }
+
+        /* send message form styling end */
     </style>
 </head>
 
@@ -224,53 +259,121 @@
         <h2>Bihar Engineers Help</h2>
         <a href="#gate_notes"><span class="submenu"> GATE Materials </span></a>
         <a href="#pce_notes"><span class="submenu"> PCE Notes </span></a>
-        <a href="https://rajkumarmotivationspeaker.github.io/My-profile-/"><span class="submenu"> About Developer </span></a>
+        <a href="https://rajkumarmotivationspeaker.github.io/My-profile-/"><span class="submenu"> About Developer
+            </span></a>
     </div>
 
-    <nav>
-        <div class="titlebar">
-            <h3>Empowering Engineers for a <br> Bright Future</h3>
-            <p class="titlebar_p">Explore resources, notes, and materials to <br>excel in engineering exams.</p>
-            <button class="titlebar_get_started" onclick="startBlinking()">Get Started</button>
+    <section>
+        <nav>
+            <div class="titlebar">
+                <h3>Empowering Engineers for a <br> Bright Future</h3>
+                <p class="titlebar_p">Explore resources, notes, and materials to <br>excel in engineering exams.</p>
+                <button class="titlebar_get_started" onclick="startBlinking()">Get Started</button>
+            </div>
+        </nav>
+
+        <!-- Syllabus Section -->
+        <div class="symb">
+            <center>
+                <a href="https://gate2025.iitr.ac.in/exam-papers-and-syllabus.html"><button class="sylbus" id="btn1">
+                        Gate
+                        Syllabus </button></a> <br>
+                <a href="https://drive.google.com/file/d/1_sg-BBn4dmnnTEzI05D8yqud2-KAtpr5/preview"><button
+                        class="sylbus" id="btn2"> B.Tech Syllabus </button></a><br>
+                <button class="sylbus" id="btn3"> ESE Syllabus </button>
+            </center>
         </div>
-    </nav>
 
-    <!-- Syllabus Section -->
-    <div class="symb">
-        <center>
-            <a href="https://gate2025.iitr.ac.in/exam-papers-and-syllabus.html"><button class="sylbus" id="btn1"> Gate
-                    Syllabus </button></a> <br>
-            <a href="https://drive.google.com/file/d/1_sg-BBn4dmnnTEzI05D8yqud2-KAtpr5/preview"><button class="sylbus"
-                    id="btn2"> B.Tech Syllabus </button></a><br>
-            <button class="sylbus" id="btn3"> ESE Syllabus </button>
-        </center>
-    </div>
+        <!-- Study Materials Section -->
+        <div class="study" id="pce_notes">
+            <h1 class="study_notes"> PCE Study Materials </h1>
+            <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
+            <a href="pce_notes.html"><button class="view_resource"> View Resources</button></a>
+        </div>
 
-    <!-- Study Materials Section -->
-    <div class="study" id="pce_notes">
-        <h1 class="study_notes"> PCE Study Materials </h1>
-        <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
-        <a href="pce_notes.html"><button class="view_resource"> View Resources</button></a>
-    </div>
+        <div class="study" id="gate_notes">
+            <h1 class="study_notes"> Our Books </h1>
+            <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
+            <a href="my_books.html"><button class="view_resource"> View Resources</button></a>
+        </div>
 
-    <div class="study" id="gate_notes">
-        <h1 class="study_notes"> Our Books </h1>
-        <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
-        <a href="my_books.html"><button class="view_resource"> View Resources</button></a>
-    </div>
+        <div class="study" id="book">
+            <h1 class="study_notes"> OUR PYQ </h1>
+            <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
+            <a href="our_pyq.html"><button class="view_resource"> View Resources</button></a>
+        </div>
 
-     <div class="study" id="book">
-        <h1 class="study_notes"> OUR PYQ  </h1>
-        <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
-        <a href="our_pyq.html"><button class="view_resource"> View Resources</button></a>
-    </div>
+        <div class="study" id="book">
+            <h1 class="study_notes"> GATE Study Materials </h1>
+            <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
+            <a href="#"><button class="view_resource"> View Resources</button></a>
+        </div>
 
-    <div class="study" id="book">
-        <h1 class="study_notes"> GATE Study Materials </h1>
-        <p class="study_subtitle">Get detailed and exam-focused notes for engineering exams.</p>
-        <a href="#"><button class="view_resource"> View Resources</button></a>
-    </div>
+        <!-- send message add -->
 
+        <div class="study form_div" id="book">
+            <div class="container">
+                <div class="form-container">
+                    <h4 class="text-center mb-4">Send Your Feedback</h4>
+                    <form id="submit-to-google-sheet">
+
+                        <div class="form-group">
+                            <label for="name" class="form_name">Name:</label>
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form_name">Email:</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Email"
+                                required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slip" class="form_name">Contact Number:</label>
+                            <input class="form-control" type="text" name="contact_number" id="contact_number"
+                                placeholder="Contact Number" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loc" class="form_name">Gender:</label>
+                            <select class="form-control" name="gender" id="gender" required>
+                                <option value="" disabled selected hidden>Choose...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="loc" class="form_name">Message:</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Message"
+                                required></textarea>
+
+                            <div class="form-group form-check mt-2">
+                                <input class="form-check-input" type="checkbox" id="age" />
+                                <label class="form-check-label" for="age">Check if you are over 18 years old</label>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox" id="ex" required />
+                                <label class="form-check-label" for="ex">By checking this box I certify that I am agree
+                                    with the data
+                                    terms and policies.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Submit
+                            </button>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
     <footer>
         <p class="footer_text">© 2025 Bihar Engineers Help | Designed By: Motivationzilla.com</p>
         <a href="privacy-policy.html">
@@ -284,28 +387,45 @@
         </a>
     </footer>
 
+
+
+
+
     <script>
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbzQyNtqQR83UGn3eai5o3WiFkM7wtkrjRmeS-zZKHVx6FqcmbiV2GVHKGhoeZBW43nuAA/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            var formData = new FormData(form);
+            var ex = document.getElementById("ex").checked;
+            var age = document.getElementById("age").checked;
 
-        
-
-
-        function startBlinking() {
-            const button = document.querySelector('.titlebar_get_started');
-            const buttonRect = button.getBoundingClientRect();
-            const colors = ['yellow', 'red', 'blue', 'green', 'orange', 'purple'];
-            for (let i = 0; i < 10; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
-                star.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                star.style.top = `${buttonRect.top + window.scrollY + Math.random() * buttonRect.height - 15}px`;
-                star.style.left = `${buttonRect.left + window.scrollX + Math.random() * buttonRect.width - 15}px`;
-                document.body.appendChild(star);
-                setTimeout(() => {
-                    star.remove();
-                }, 1000);
+            if (age) {
+                formData.append("age", "Yes");
+            } else {
+                formData.append("age", "No");
             }
-        }
+            if (ex) {
+                formData.append("ex", "Yes");
+            } else {
+                formData.append("ex", "No");
+            }
+
+            fetch(scriptURL, { method: "POST", body: formData })
+                .then((response) => {
+                    swal("Done", "Submitted Successfully.", "success");
+                })
+                .catch((error) => {
+                    swal("Error", "Something went wrong. please try again!", "error");
+                });
+        });
     </script>
+
+
+
+
+
 </body>
 
 </html>
