@@ -184,6 +184,7 @@
 
         #privacy-policy {
             color: yellow;
+        
         }
 
         a {
@@ -193,7 +194,9 @@
         /* change 13/07/2025 for heading and subtitle for good view in mobile  */
         @media screen and (max-width: 1110px) {
 
-            
+            /* body {
+                background-color: red;
+            } */
 
             h3 {
                 color: yellow;
@@ -242,10 +245,9 @@
             float: left;
             font-weight: bold;
         }
-        
-        .btn-primary{
+
+        .btn-primary {
             background-color: greenyellow;
-color:black;
         }
 
         /* send message form styling end */
@@ -333,6 +335,22 @@ color:black;
                                 placeholder="Contact Number" required />
                         </div>
 
+
+                        <div class="form-group">
+                            <label for="branch" class="form_name">Branch:</label>
+                            <select class="form-control" name="branch" id="branch" required>
+                                <option value="" disabled selected hidden>Choose your branch...</option>
+                                <option value="CSE">CSE</option>
+                                <option value="AI & Data Science">AI & Data Science</option>
+                                <option value="Civil">Civil</option>
+                                <option value="Mechanical">Mechanical</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Chemical">Chemical</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
                         <div class="form-group">
                             <label for="loc" class="form_name">Gender:</label>
                             <select class="form-control" name="gender" id="gender" required>
@@ -397,8 +415,10 @@ color:black;
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             var formData = new FormData(form);
+
             var ex = document.getElementById("ex").checked;
             var age = document.getElementById("age").checked;
+            var branch = document.getElementById("branch").value;
 
             if (age) {
                 formData.append("age", "Yes");
@@ -410,10 +430,12 @@ color:black;
             } else {
                 formData.append("ex", "No");
             }
+            formData.append("branch", branch);
 
             fetch(scriptURL, { method: "POST", body: formData })
                 .then((response) => {
                     swal("Done", "Submitted Successfully.", "success");
+                    form.reset(); // Reset the form fields after successful submission
                 })
                 .catch((error) => {
                     swal("Error", "Something went wrong. please try again!", "error");
