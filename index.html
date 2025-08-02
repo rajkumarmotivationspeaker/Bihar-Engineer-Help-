@@ -283,6 +283,318 @@
         }
 
       /* new message style code end */
+
+         /* image slide style start */
+        .imge_slide_box {
+            /* border: 4px groove #007bff; */
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .imge_slide {
+            width: 30%;
+            height: 300px;
+            /* background-color: aqua; */
+            background-image: url('slide1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            border: 3px double #007bff;
+            transition: transform 0.3s ease;
+
+
+        }
+
+        .imge_slide1 {
+            animation: slideAnimation1 45s infinite ease-in-out alternate;
+            box-shadow: 5px 5px 15px rgb(255, 174, 0);
+        }
+
+        .imge_slide2 {
+            animation: slideAnimation2 50s infinite ease-in-out alternate;
+            box-shadow: 5px 5px 15px rgba(0, 42, 255, 0.74);
+        }
+
+        .imge_slide3 {
+            animation: slideAnimation3 40s infinite ease-in alternate;
+            box-shadow: 5px 5px 15px rgb(38, 255, 0);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .imge_slide {
+                width: 48%;
+                flex-wrap: wrap;
+            }
+
+            .imge_slide3 {
+                display: none;
+                background-color: #ff0000;
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .imge_slide {
+                width: 100%;
+            }
+
+            .imge_slide3 {
+                display: none;
+                background-color: #ff0000;
+            }
+
+            .imge_slide1 {
+                animation: slideAnimation4 45s infinite ease-in-out alternate;
+            }
+
+            .imge_slide2 {
+                animation: slideAnimation5 50s infinite ease-in-out alternate;
+            }
+
+        }
+
+
+
+        @keyframes slideAnimation1 {
+            0% {
+                background-image: url('animation1/slide11.jpg');
+            }
+
+            10% {
+                background-image: url('animation1/slide12.jpg');
+            }
+
+            20% {
+                background-image: url('animation1/slide13.jpg');
+            }
+
+            30% {
+                background-image: url('animation1/slide14.jpeg');
+            }
+
+            40% {
+                background-image: url('animation1/slide15.jpeg');
+            }
+
+            50% {
+                background-image: url('animation1/slide16.jpeg');
+            }
+
+            60% {
+                background-image: url('animation1/slide17.jpeg');
+            }
+
+            70% {
+                background-image: url('animation1/slide18.jpeg');
+            }
+
+            80% {
+                background-image: url('animation1/slide19.jpeg');
+            }
+
+            90% {
+                background-image: url('animation1/slide110.jpeg');
+            }
+
+
+            100% {
+                background-image: url('animation1/slide11.jpg');
+            }
+        }
+
+        @keyframes slideAnimation2 {
+            0% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+
+            10% {
+                background-image: url('animation2/slide22.jpeg');
+            }
+
+            20% {
+                background-image: url('animation2/slide23.jpeg');
+            }
+
+            30% {
+                background-image: url('animation2/slide24.jpeg');
+            }
+
+            40% {
+                background-image: url('animation2/slide25.jpeg');
+            }
+
+            50% {
+                background-image: url('animation2/slide26.jpeg');
+            }
+
+            60% {
+                background-image: url('animation2/slide27.jpeg');
+            }
+
+            70% {
+                background-image: url('animation2/slide28.jpeg');
+            }
+
+            80% {
+                background-image: url('animation2/slide29.jpeg');
+            }
+
+            90% {
+                background-image: url('animation2/slide210.jpeg');
+            }
+
+            100% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+        }
+
+        @keyframes slideAnimation3 {
+            0% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+
+            10% {
+                background-image: url('animation3/slide32.jpeg');
+            }
+
+            20% {
+                background-image: url('animation3/slide33.jpeg');
+            }
+
+            30% {
+                background-image: url('animation3/slide34.jpeg');
+            }
+
+            40% {
+                background-image: url('animation3/slide35.jpeg');
+            }
+
+            50% {
+                background-image: url('animation3/slide36.jpeg');
+            }
+
+            60% {
+                background-image: url('slide37.jpeg');
+            }
+
+            70% {
+                background-image: url('animation3/slide38.jpeg');
+            }
+
+            80% {
+                background-image: url('animation3/slide39.jpeg');
+            }
+
+            90% {
+                background-image: url('animation3/slide310.jpeg');
+            }
+
+            100% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+        }
+
+        /* animation for tab */
+
+        @keyframes slideAnimation4 {
+            0% {
+                background-image: url('animation1/slide11.jpg');
+            }
+
+            10% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+
+            20% {
+                background-image: url('animation1/slide12.jpg');
+            }
+
+            30% {
+                background-image: url('animation3/slide32.jpeg');
+            }
+
+            40% {
+                background-image: url('animation1/slide13.jpg');
+            }
+
+            50% {
+                background-image: url('animation3/slide33.jpeg');
+            }
+
+            60% {
+                background-image: url('animation1/slide14.jpeg');
+            }
+
+            70% {
+                background-image: url('animation3/slide34.jpeg');
+            }
+
+            80% {
+                background-image: url('animation1/slide15.jpeg');
+            }
+
+            90% {
+                background-image: url('animation3/slide35.jpeg');
+            }
+
+            100% {
+                background-image: url('animation1/slide11.jpg');
+            }
+        }
+
+        @keyframes slideAnimation5 {
+            0% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+
+            10% {
+                background-image: url('animation3/slide36.jpeg');
+            }
+
+            20% {
+                background-image: url('animation2/slide22.jpeg');
+            }
+
+            30% {
+                background-image: url('animation3/slide37.jpeg');
+            }
+
+            40% {
+                background-image: url('animation2/slide23.jpeg');
+            }
+
+            50% {
+                background-image: url('animation3/slide38.jpeg');
+            }
+
+            60% {
+                background-image: url('animation2/slide24.jpeg');
+            }
+
+            70% {
+                background-image: url('animation3/slide39.jpeg');
+            }
+
+            80% {
+                background-image: url('animation2/slide25.jpeg');
+            }
+
+            90% {
+                background-image: url('animation3/slide310.jpeg');
+            }
+
+            100% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+        }
+
+        /* image slide style end */
         
     </style>
 </head>
