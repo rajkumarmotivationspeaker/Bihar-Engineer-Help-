@@ -114,7 +114,7 @@
         <a href="new_pps.html"> <button>PPS Notes</button> </a>
          <a href="new_it.html"> <button>IT Workshop</button></a>
          <a href="#new_be.html"> <button >Basic Electronics</button></a>
-        <a href="#cs_notes.html"> <button>Computer Science Notes</button></a>
+        <a href="#"> <button>Computer Science Notes</button></a>
         
        <a href="">  <button> Python </button></a>
 
@@ -126,5 +126,18 @@
       </div>
     </section>
   </main>
+
+  <script>
+    let btns = document.querySelectorAll('.notes-buttons button');
+    btns.forEach(btn => {
+      let aTag = btn.closest('a');
+      if (aTag && aTag.getAttribute('href') === '#') {
+        btn.style.backgroundColor = 'gray';
+      } else {
+        btn.style.backgroundColor = '#007bff';
+      }
+    });
+  </script>
+  
 </body>
 </html>
