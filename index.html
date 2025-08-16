@@ -624,7 +624,7 @@
             <div class="titlebar">
                 <h3>Empowering Engineers for a <br> Bright Future</h3>
                 <p class="titlebar_p">Explore resources, notes, and materials to <br>excel in engineering exams.</p>
-                <button class="titlebar_get_started" onclick="startBlinking()">Get Started</button>
+                <a href="https://www.appcreator24.com/app3446659-1xopwt"><button class="titlebar_get_started" onclick="startBlinking()">Donload App</button></a>
             </div>
         </nav>
 
@@ -770,6 +770,26 @@
         </div>
     <!-- send message end -->
 
+    <!-- pop message start -->
+
+    <!-- Add this before </body> -->
+    <div id="download-popup"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; justify-content:center; align-items:center;">
+        <div style="background:#fff; padding:30px 20px; border-radius:12px; text-align:center; max-width:90vw;">
+            <h2 id="donloadapp" style="color: red;">Download Our App!</h2>
+            <p>Get instant access to study materials and updates. Download our app now!</p>
+            <button id="download-btn"
+                style="background:#007bff; color:#fff; border:none; padding:12px 30px; border-radius:8px; font-size:1.2em; cursor:pointer;">Download</button>
+            <br><br>
+            <button id="close-popup"
+                style="background:#ccc; color:#333; border:none; padding:8px 20px; border-radius:8px; cursor:pointer;">Close</button>
+        </div>
+    </div>
+
+
+    <!-- pop message end -->
+
+
    </section> 
     
     
@@ -790,41 +810,22 @@
 
 
 
-    <script>
-        const scriptURL =
-            "https://script.google.com/macros/s/AKfycbzQyNtqQR83UGn3eai5o3WiFkM7wtkrjRmeS-zZKHVx6FqcmbiV2GVHKGhoeZBW43nuAA/exec";
-        const form = document.forms["submit-to-google-sheet"];
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            var formData = new FormData(form);
+     <script>
 
-            var ex = document.getElementById("ex").checked;
-            var age = document.getElementById("age").checked;
-            var branch = document.getElementById("branch").value;
-
-            if (age) {
-                formData.append("age", "Yes");
-            } else {
-                formData.append("age", "No");
-            }
-            if (ex) {
-                formData.append("ex", "Yes");
-            } else {
-                formData.append("ex", "No");
-            }
-            formData.append("branch", branch);
-
-            fetch(scriptURL, { method: "POST", body: formData })
-                .then((response) => {
-                    swal("Done", "Submitted Successfully.", "success");
-                    form.reset(); // Reset the form fields after successful submission
-                })
-                .catch((error) => {
-                    swal("Error", "Something went wrong. please try again!", "error");
-                });
-        });
-    </script>
-
+ // Show popup after 1 minute for first-time visitors
+  if (!localStorage.getItem('appPopupShown')) {
+    setTimeout(function() {
+      document.getElementById('download-popup').style.display = 'flex';
+      localStorage.setItem('appPopupShown', 'true');
+    }, 60000); // 1 minute = 60000 ms
+  }
+  document.getElementById('download-btn').onclick = function() {
+    window.location.href = 'https://www.appcreator24.com/app3446659-1xopwt'; // Replace with your actual download link
+  };
+  document.getElementById('close-popup').onclick = function() {
+    document.getElementById('download-popup').style.display = 'none';
+  };
+</script>
 
 
 
