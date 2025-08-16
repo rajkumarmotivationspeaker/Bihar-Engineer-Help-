@@ -118,5 +118,20 @@
       </div>
     </section>
   </main>
+
+
+  <script>
+    let btns = document.querySelectorAll('.notes-buttons button'); // Select all buttons
+  
+    btns.forEach(btn => {
+      if (btn.getAttribute('onclick').includes('#')) { // Check if onclick opens '#'
+        btn.style.backgroundColor = 'gray';
+      } else {
+        btn.style.backgroundColor = 'blue';
+      }
+    });
+  </script>
+  
 </body>
 </html>
+
