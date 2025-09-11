@@ -1,0 +1,590 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .topbar {
+            width: 100%;
+            background-color: #007AFF;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            aspect-ratio: 20/1;
+
+        }
+
+        section {
+            position: relative;
+        }
+
+        .titlebar {
+            width: 100%;
+            background-color: #008EFF;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+            padding-top: 20px;
+            color: white;
+        }
+
+        .star {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .symb {
+            width: 100%;
+            background-color: #fff;
+            margin: 12px 0;
+            box-shadow: 1px 1px 10px gray;
+            align-items: center;
+            padding: 30px 40px;
+        }
+
+        .study {
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            margin: 12px 0;
+            box-shadow: 1px 1px 10px gray;
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #0080ff;
+            margin: 20px 0 0 0;
+            text-align: center;
+            padding: 22px;
+            color: aliceblue;
+        }
+
+        h2 {
+            color: yellow;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 4vw;
+        }
+
+        h3 {
+            color: yellow;
+            font-size: 1.5rem;
+        }
+
+        .submenu {
+            color: aliceblue;
+            margin: 10px 10px 0 0;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        span:hover {
+            color: red;
+        }
+
+        .titlebar_p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .titlebar_get_started {
+            margin-top: 15px;
+            width: 110px;
+            height: 40px;
+            color: blue;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .sylbus {
+            width: 50vw;
+            height: 50px;
+            margin: 5px 0;
+            font-size: 15px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+
+        #btn1 {
+            background-color: rgb(119, 195, 5);
+        }
+
+        #btn2 {
+            background-color: rgb(0, 128, 255);
+        }
+
+        #btn3 {
+            background-color: rgb(187, 0, 230);
+        }
+
+        .study_notes {
+            color: #212121;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .view_resource {
+            width: 40vw;
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0068D9;
+            color: white;
+            font-weight: bold;
+        }
+
+        #privacy-policy {
+            color: yellow;
+        
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* change 13/07/2025 for heading and subtitle for good view in mobile  */
+        @media screen and (max-width: 1110px) {
+
+            /* body {
+                background-color: red;
+            } */
+
+            h3 {
+                color: yellow;
+                font-size: 16px;
+                font-family: sans-serif;
+            }
+
+            .titlebar_p {
+                font-size: 13px;
+                text-align: center;
+                margin-top: 5px;
+                font-family: sans-serif;
+            }
+
+            h2 {
+                color: yellow;
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+
+            .submenu {
+                color: aliceblue;
+                margin: 10px 10px 0 0;
+                font-weight: bold;
+                font-size: 10px;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+        }
+
+        /* send message form styling start */
+
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form_name {
+
+            float: left;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: greenyellow;
+        }
+
+        /* send message form styling end */
+
+        /* new message style code */
+
+        .message_box {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            /* background-color: #007bff; */
+            background-image: url('telegram.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            color: white;
+            padding: 15px;
+            border: 2px double #007bff;
+            border-radius: 28px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .message_box2 {
+            bottom: 65px;
+            background-image: url('hearts-love.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: -2px -2px;
+            border: 2px double #ff0000;
+        }
+
+        .ms_box{
+           z-index:1;
+        }
+
+      /* new message style code end */
+
+         /* image slide style start */
+        .imge_slide_box {
+            /* border: 4px groove #007bff; */
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .imge_slide {
+            width: 30%;
+            height: 300px;
+            /* background-color: aqua; */
+            background-image: url('slide1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            border: 3px double #007bff;
+            transition: transform 0.3s ease;
+
+
+        }
+
+        .imge_slide1 {
+            animation: slideAnimation1 50s infinite ease-in-out alternate;
+            box-shadow: 5px 5px 15px rgb(255, 174, 0);
+        }
+
+        .imge_slide2 {
+            animation: slideAnimation2 55s infinite ease-in-out alternate;
+            box-shadow: 5px 5px 15px rgba(0, 42, 255, 0.74);
+        }
+
+        .imge_slide3 {
+            animation: slideAnimation3 60s infinite ease-in alternate;
+            box-shadow: 5px 5px 15px rgb(38, 255, 0);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .imge_slide {
+                width: 48%;
+                flex-wrap: wrap;
+            }
+
+            .imge_slide3 {
+                display: none;
+                background-color: #ff0000;
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+             .imge_slide_box {
+                    padding: 5px;
+
+             }
+                 
+            .imge_slide {
+                width: 100%;
+                height: 250px;
+            }
+
+            .imge_slide3 {
+                display: none;
+                background-color: #ff0000;
+            }
+
+            .imge_slide1 {
+                animation: slideAnimation4 55s infinite ease-in-out alternate;
+            }
+
+            .imge_slide2 {
+                animation: slideAnimation5 60s infinite ease-in-out alternate;
+            }
+
+        }
+
+
+
+        @keyframes slideAnimation1 {
+            0% {
+                background-image: url('animation1/slide11.jpg');
+            }
+
+            10% {
+                background-image: url('animation1/slide12.jpg');
+            }
+
+            20% {
+                background-image: url('animation1/slide13.jpg');
+            }
+
+            30% {
+                background-image: url('animation1/slide14.jpeg');
+            }
+
+            40% {
+                background-image: url('animation1/slide15.jpeg');
+            }
+
+            50% {
+                background-image: url('animation1/slide16.jpeg');
+            }
+
+            60% {
+                background-image: url('animation1/slide17.jpeg');
+            }
+
+            70% {
+                background-image: url('animation1/slide18.jpeg');
+            }
+
+            80% {
+                background-image: url('animation1/slide19.jpeg');
+            }
+
+            90% {
+                background-image: url('animation1/slide110.jpeg');
+            }
+
+
+            100% {
+                background-image: url('animation1/slide11.jpg');
+            }
+        }
+
+        @keyframes slideAnimation2 {
+            0% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+
+            10% {
+                background-image: url('animation2/slide22.jpg');
+            }
+
+            20% {
+                background-image: url('animation2/slide23.jpg');
+            }
+
+            30% {
+                background-image: url('animation2/slide24.jpg');
+            }
+
+            40% {
+                background-image: url('animation2/slide25.jpg');
+            }
+
+            50% {
+                background-image: url('animation2/slide26.jpeg');
+            }
+
+            60% {
+                background-image: url('animation2/slide27.jpeg');
+            }
+
+            70% {
+                background-image: url('animation2/slide28.jpeg');
+            }
+
+            80% {
+                background-image: url('animation2/slide29.jpeg');
+            }
+
+            90% {
+                background-image: url('animation2/slide210.jpeg');
+            }
+
+            100% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+        }
+
+        @keyframes slideAnimation3 {
+            0% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+
+            10% {
+                background-image: url('animation3/slide32.jpeg');
+            }
+
+            20% {
+                background-image: url('animation3/slide33.jpeg');
+            }
+
+            30% {
+                background-image: url('animation3/slide34.jpeg');
+            }
+
+            40% {
+                background-image: url('animation3/slide35.jpeg');
+            }
+
+            50% {
+                background-image: url('animation3/slide36.jpeg');
+            }
+
+            60% {
+                background-image: url('animation3/slide37.jpeg');
+            }
+
+            70% {
+                background-image: url('animation3/slide38.jpeg');
+            }
+
+            80% {
+                background-image: url('animation3/slide39.jpeg');
+            }
+
+            90% {
+                background-image: url('animation3/slide310.jpeg');
+            }
+
+            100% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+        }
+
+        /* animation for tab */
+
+        @keyframes slideAnimation4 {
+            0% {
+                background-image: url('animation1/slide11.jpg');
+            }
+
+            10% {
+                background-image: url('animation3/slide31.jpeg');
+            }
+
+            20% {
+                background-image: url('animation1/slide12.jpg');
+            }
+
+            30% {
+                background-image: url('animation3/slide32.jpeg');
+            }
+
+            40% {
+                background-image: url('animation1/slide13.jpg');
+            }
+
+            50% {
+                background-image: url('animation3/slide33.jpeg');
+            }
+
+            60% {
+                background-image: url('animation1/slide14.jpeg');
+            }
+
+            70% {
+                background-image: url('animation3/slide34.jpeg');
+            }
+
+            80% {
+                background-image: url('animation1/slide15.jpeg');
+            }
+
+            90% {
+                background-image: url('animation3/slide35.jpeg');
+            }
+
+            100% {
+                background-image: url('animation1/slide11.jpg');
+            }
+        }
+
+        @keyframes slideAnimation5 {
+            0% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+
+            10% {
+                background-image: url('animation3/slide36.jpeg');
+            }
+
+            20% {
+                background-image: url('animation2/slide22.jpg');
+            }
+
+            30% {
+                background-image: url('animation3/slide37.jpeg');
+            }
+
+            40% {
+                background-image: url('animation2/slide23.jpg');
+            }
+
+            50% {
+                background-image: url('animation3/slide38.jpeg');
+            }
+
+            60% {
+                background-image: url('animation2/slide24.jpg');
+            }
+
+            70% {
+                background-image: url('animation3/slide39.jpeg');
+            }
+
+            80% {
+                background-image: url('animation2/slide25.jpg');
+            }
+
+            90% {
+                background-image: url('animation3/slide310.jpeg');
+            }
+
+            100% {
+                background-image: url('animation2/slide21.jpeg');
+            }
+        }
+
+        /* image slide style end */
+        
