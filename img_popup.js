@@ -18,4 +18,5 @@ function hidepop(){
     
 }
 
-setTimeout(showpop, 8000)
+
+setTimeout(showpop, 18000)
