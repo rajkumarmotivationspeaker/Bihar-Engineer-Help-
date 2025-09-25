@@ -66,6 +66,8 @@
 
 /* popup image styling end */
 
+
+
 /* developer coding start */
 
 .develeper {
@@ -119,25 +121,25 @@
 }
 
 .ib1 {
-    background-image: url(./our-dev/himanshu.jpg);
+    background-image: url(./our-div/himanshu.jpg);
 }
 
 .ib2 {
-    background-image: url(./our-dev/shivam.jpg);
+    background-image: url(./our-div/shivam.jpg);
 }
 
 .ib3 {
     width: 220px;
     height: 270px;
-    background-image: url(./our-dev/raj.jpg);
+    background-image: url(./our-div/raj.jpg);
 }
 
 .ib4 {
-    background-image: url(./our-dev/mithun.jpg);
+    background-image: url(./our-div/mithun.jpg);
 }
 
 .ib5 {
-    background-image: url(./our-dev/#.jpg);
+    background-image: url(./our-div/#.jpg);
 }
 
 
@@ -171,12 +173,12 @@
     }
 
     .ib1{
-        background-image: url(./our-dev/himanshu.jpg);
+        background-image: url(./our-div/himanshu.jpg);
     }
     .ib3{
            width: 180px;
     height: 230px;
-    background-image: url(./our-dev/raj.jpg);
+    background-image: url(./our-div/raj.jpg);
     }
 
   
