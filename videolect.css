@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+main>a {
+    text-decoration: none;
+    color: black;
+}
+
+.vid-box {
+    width: 350px;
+    height: auto;
+    border: 2px solid black;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px #007bffaf;
+    border-radius: 5px;
+}
+
+.themblian {
+    width: 98%;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.sub {
+    width: 98%;
+    /* margin-top: 10px; */
+    background-color: aqua;
+    text-align: center;
+    padding: 5px;
+}
+
+.unit {
+    color: coral;
+}
+
+.vid-box>span {
+    width: 98%;
+    background-color: #007bff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+footer {
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+.ply1 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply2 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply3 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply4 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply5 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply6 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply7 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply8 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply9 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply10 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply11 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply12 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply13 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply14 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply15 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply16 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply17 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply18 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply19 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ply20 {
+    background-image: url(./vid_img/#);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
