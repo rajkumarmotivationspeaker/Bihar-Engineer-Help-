@@ -22,7 +22,7 @@ To help Bihar engineering students with:
 - Diploma to degree students
 
 ## 🌐 Live Demo
-https://username.github.io/bihar-engineering-help/
+https://biharengineershelp.netlify.app/
 
 ## 🔑 Keywords
 Bihar engineering notes, Bihar engineering help, BTech Bihar students
