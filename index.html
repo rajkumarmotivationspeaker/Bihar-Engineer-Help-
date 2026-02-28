@@ -317,15 +317,16 @@
                 onl.style.display = "none";
                 sec.style.position = "relative";
                 sec.style.overflowY = "visible";
-
             }, 1000);
         });
 
         window.addEventListener("offline", () => {
+               setTimeout(() => {
             offl.style.display = "block";
             onl.style.display = " none";
             sec.style.overflowY = "hidden";
-        })
+            }, 2000);
+        });
  // internet tracker scripting end...
          
 </script>
