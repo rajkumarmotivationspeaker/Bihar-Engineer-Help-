@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="popstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="icon" href="logo.jpg">
-
+    <link rel="stylesheet" href="internet_tracking.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -295,6 +296,33 @@
   document.getElementById('close-popup').onclick = function() {
     document.getElementById('download-popup').style.display = 'none';
   };
+
+// internet tracker scripting start...
+
+        let onl = document.querySelector(".online");
+        let offl = document.querySelector(".offline");
+
+        let sec = document.querySelector("body")
+
+        window.addEventListener("online", () => {
+            onl.style.display = "block";
+            offl.style.display = " none";
+
+            setTimeout(() => {
+                onl.style.display = "none";
+                sec.style.position = "relative";
+                sec.style.overflowY = "visible";
+
+            }, 1000);
+        });
+
+        window.addEventListener("offline", () => {
+            offl.style.display = "block";
+            onl.style.display = " none";
+            sec.style.overflowY = "hidden";
+        })
+ // internet tracker scripting end...
+         
 </script>
 
 </body>
