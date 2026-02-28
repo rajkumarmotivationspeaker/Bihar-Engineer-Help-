@@ -270,7 +270,18 @@
     <script src="top.js"></script>
     <script src="img_popup.js"></script>
      <script>
+      // offline and online tracking
+            window.addEventListener("online",()=>{
+            alert("Oh Yee you are online...😊");
+            
+         });
 
+         window.addEventListener("offline",()=>{
+            alert("Opps! you are offline.😢");
+          
+         });
+
+         
  // Show popup after 1 minute for first-time visitors
   if (!localStorage.getItem('appPopupShown')) {
     setTimeout(function() {
